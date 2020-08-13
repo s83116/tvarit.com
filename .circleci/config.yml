@@ -12,6 +12,7 @@ jobs:
           command: |
             sudo apt-get update;
             sudo apt-get install lftp;
+            echo ${username}
       - checkout
       - run:
           name: Send Via SFTP
