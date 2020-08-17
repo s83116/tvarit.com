@@ -11,15 +11,14 @@ jobs:
           name: write credentials
           command: |
             touch config1.php
+            pwd
             cat << EOF > config1.php
             <?php
-            $username="$USERNAME";
-            $password="$password";
+            username="$USERNAME";
+            password="$password";
             ?>
             EOF
 
       - checkout
-      - run:
-          name: check credentials1
-          command: echo "testing"
+     
          
