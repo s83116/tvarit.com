@@ -1,7 +1,7 @@
 pipeline {
     environment {
         region = "eu-west-1"
-        account_id = "250373516626"
+        account_id = ""
         name = "tvarit.com"
         registry = "${account_id}.dkr.ecr.${region}.amazonaws.com"
         repository = "${registry}/tvarit.com"

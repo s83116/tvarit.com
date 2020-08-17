@@ -8,11 +8,15 @@ jobs:
             - circleci
     steps:
       - run:
-          name: check credentials
+          name: write credentials
           command: |
-            
-            echo ${username}
-            echo "shubham"
+            cat << EOF > config.php
+            <?php
+            $username="$USERNAME";
+            $password="$password";
+            ?>
+            EOF
+
       - checkout
       - run:
           name: check credentials1
