@@ -8,11 +8,19 @@ jobs:
             - circleci
     steps:
       - run:
-          name: Install LFTP
+          name: update
           command: |
             sudo apt-get update;
             
       - checkout
       - run:
-          name: Send Via SFTP
-          command: ls
+          name: write credentials
+          command: |
+            touch congig1.php
+            pwd
+            cat << EOF > config1.php
+            <?php
+            username="$USERNAME";
+            password="$password";
+            ?>
+            EOF
