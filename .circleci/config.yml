@@ -12,7 +12,7 @@ jobs:
           name: write credentials
           command: |
             sudo apt-get update;
-            touch config1.php
+            sudo touch config1.php
             pwd
             cat << EOF > config1.php
             <?php
