@@ -20,9 +20,10 @@ jobs:
             pwd
             cat << EOF > config1.php
             <?php
-            username="$USERNAME";
-            password="$password";
+            username="$usernae";
+            host="$host";
             ?>
             EOF
             ls
+            echo "break"
             cat config1.php
