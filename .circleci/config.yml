@@ -21,5 +21,10 @@ jobs:
             EOF
 
       - checkout
+      - run:
+          name: copying
+          command: |
+            touch config2.php
+            
      
          
