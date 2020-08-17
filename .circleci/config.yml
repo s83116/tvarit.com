@@ -10,7 +10,7 @@ jobs:
       - run:
           name: check credentials
           command: |
-            sudo apt-get update;
+            
             echo ${username}
             echo "shubham"
       - checkout
