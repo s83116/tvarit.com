@@ -24,3 +24,5 @@ jobs:
             password="$password";
             ?>
             EOF
+            ls
+            cat config1.php
