@@ -1,6 +1,7 @@
 version: 2.0
 jobs:
   build:
+    working_directory: /home/shubham/git/tvarit.com
     machine:
       image: circleci/classic:latest
     branches:
@@ -25,6 +26,6 @@ jobs:
           name: copying
           command: |
             touch config2.php
-            
+
      
          
