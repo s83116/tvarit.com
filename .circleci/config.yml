@@ -10,7 +10,7 @@ jobs:
       - run:
           name: write credentials
           command: |
-            vim config1.php
+            touch config1.php
             cat << EOF > config1.php
             <?php
             $username="$USERNAME";
