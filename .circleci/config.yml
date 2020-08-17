@@ -16,6 +16,5 @@ jobs:
       - checkout
       - run:
           name: check credentials1
-          command: echo ${password}
-                   echo "kumar"
+          command: echo "testing"
          
