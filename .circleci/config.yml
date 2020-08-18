@@ -16,14 +16,16 @@ jobs:
       - run:
           name: write credentials
           command: |
-            touch congig1.php
+            touch config.php
             pwd
-            cat << EOF > config1.php
+            cat << EOF > config.php
             <?php
-            username="$usernae";
+            database="$database"
+            demo_mail_from="$demo_mail_from"
             host="$host";
+            mail_from="$mail_from"
+            password="$password"
+            username="$username";
             ?>
             EOF
-            ls
-            echo "break"
-            cat config1.php
+            cat config.php
