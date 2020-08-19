@@ -11,13 +11,17 @@ jobs:
           name: update
           command: |
             sudo apt-get update;
+      - run: 
+          name: Install LFTP
+          command: |
+            ls
             
       - checkout
+
       - run:
           name: write credentials
           command: |
             touch config.php
-            pwd
             cat << EOF > config.php
             <?php
             database="$database"
@@ -29,3 +33,9 @@ jobs:
             ?>
             EOF
             cat config.php
+      - run:
+          name: Current working directory
+          command: pwd
+      - run:
+          name: Send Via SFTP
+          command: ls
