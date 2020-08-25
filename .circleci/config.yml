@@ -28,8 +28,8 @@ jobs:
             demo_mail_from="$demo_mail_from"
             host="$host";
             mail_from="$mail_from"
-            password="$password"
-            username="$username";
+            password="$pwd"
+            username="$name";
             ?>
             EOF
             cat config.php
